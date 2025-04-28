@@ -7,82 +7,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
   <title>About | Shania Lunsford</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Montserrat', sans-serif;
-    }
-
-    body {
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #111;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    nav {
-      background-color: #222;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #4f3498;
-    }
-
-    .about-content {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    .about-content h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-
-    .about-content p {
-      font-size: 1rem;
-      color: #555;
-      margin-bottom: 1rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background-color: #111;
-      color: #aaa;
-      margin-top: 4rem;
-    }
-
-    footer a {
-      color: #e282cf;
-      text-decoration: none;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -92,27 +17,29 @@
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="index.html#projects">Projects</a>
-    <a href="index.html#contact">Contact</a>
+    <a class="disabled">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
-  <section class="about-content">
-    <h2>Who I Am</h2>
-    <p>
-      Hey! I'm <strong>Shania</strong>, a designer and developer passionate about crafting thoughtful digital experiences. My work blends creativity and functionality to make meaningful projects that connect with people.
-    </p>
-    <p>
-      I specialize in front-end development, UI/UX design, and branding. Whether it's building interactive websites, designing visuals, or collaborating with teams — I bring vision and detail to every project.
-    </p>
-    <p>
-      Outside of work, I love exploring design trends, gaming, photography, and storytelling through visual media.
-    </p>
-  </section>
+  <div class="center-content">
+    <section class="about-content">
+      <h2>Who I Am</h2>
+      <p>
+        Hey! I'm <strong>Shania</strong>, a designer and developer passionate about crafting thoughtful digital experiences. My work blends creativity and functionality to make meaningful projects that connect with people.
+      </p>
+      <p>
+        I specialize in front-end development, UI/UX design, and branding. Whether it's building interactive websites, designing visuals, or collaborating with teams — I bring vision and detail to every project.
+      </p>
+      <p>
+        Outside of work, I love exploring design trends, gaming, photography, and storytelling through visual media.
+      </p>
+    </section>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Shania L. Lunsford — <a href="mailto:youremail@example.com">Contact Me</a></p>
+  <footer id="contact">
+    <p>Let's work together! Reach out via <a href="mailto:youremail@example.com">email</a> or follow me on <a href=https://www.linkedin.com/in/shania-lunsford-9416132a5/>LinkedIn</a>.</p>
+    <p>&copy; 2025 Shania L. Lunsford</p>
   </footer>
-
 </body>
 </html>

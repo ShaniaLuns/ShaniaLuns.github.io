@@ -7,89 +7,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
   <title>Projects | Shania Lunsford</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Montserrat', sans-serif;
-    }
-
-    body {
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    header {
-      background-color: #111;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-    }
-
-    nav {
-      background-color: #222;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #e282cf;
-    }
-
-    .projects {
-      max-width: 1000px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
-
-    .projects h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .project {
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-
-    .project h3 {
-      margin-bottom: 0.5rem;
-    }
-
-    .project p {
-      color: #666;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background-color: #111;
-      color: #aaa;
-      margin-top: 4rem;
-    }
-
-    footer a {
-      color: #e282cf;
-      text-decoration: none;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -100,37 +18,42 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="index.html#contact">Contact</a>
+    <a class="disabled">Projects</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
-  <section class="projects">
-    <h2>Featured Work</h2>
+  <div id="page-container">
+    <div id="content-wrapper">
+      <section class="projects">
+        <h2>Featured Work</h2>
 
-    <div class="project">
-      <h3>Jana Marie Foundation</h3>
-      <p> I worked with the Jana Marie Foundation (JMF), to create and implement strategic social media campagines to increase the visibility of the non-profit. </p>
+        <div class="project">
+          <h3>Jana Marie Foundation</h3>
+          <p> I worked with the Jana Marie Foundation (JMF), to create and implement strategic social media campagines to increase the visibility of the non-profit. </p>
+        </div>
+
+        <div class="project">
+          <h3>Augmented Reality Sandbox</h3>
+          <p>I created an Augmented Reality Sandbox for The Army Corps of Enginers at Raystown Lake. </p>
+        </div>
+
+        <div class="project">
+          <h3>Esports Graphics</h3>
+          <p>Social Media Manager for Esports at Juniata College I had to have a wide range of skills that included: Content Creation, community engagement, advertising, and looking over performance analytics.  </p>
+        </div>
+
+        <div class="project">
+            <h3>Childrens Book Illustrator</h3>
+            <p> Collaborating with an independent Author to illustrate a childrens book. Showcasing attention to detail. Responsible for creating engaging and visually appealing illustrations that aligned with the storys theme and tone to the standards of the author. </p>
+          </div>
+      </section>
     </div>
 
-    <div class="project">
-      <h3>Augmented Reality Sandbox</h3>
-      <p>I created an Augmented Reality Sandbox for The Army Corps of Enginers at Raystown Lake. </p>
-    </div>
-
-    <div class="project">
-      <h3>Esports Graphics</h3>
-      <p>Social Media Manager for Esports at Juniata College I had to have a wide range of skills that included: Content Creation, community engagement, advertising, and looking over performance analytics.  </p>
-    </div>
-
-    <div class="project">
-        <h3>Childrens Book Illustrator</h3
-        <p> Collaborating with an independent Author to illustrate a childrens book. Showcasing attention to detail. Responsible for creating engaging and visually appealing illustrations that aligned with the storys theme and tone to the standards of the author. </p>
-      </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Shania L. Lunsford — <a href="mailto:youremail@example.com">Contact Me</a></p>
-  </footer>
+    <footer id="contact">
+      <p>Let's work together! Reach out via <a href="mailto:youremail@example.com">email</a> or follow me on <span><a href=https://www.linkedin.com/in/shania-lunsford-9416132a5>LinkedIn</a>.</span></p>
+      <p>&copy; 2025 Shania L. Lunsford</p>
+    </footer>
+  </div>
 
 </body>
 </html>
