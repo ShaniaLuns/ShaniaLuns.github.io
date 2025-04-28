@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+  <title>Contact | Shania Lunsford </title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #e282cf;
+    }
+
+    .contact {
+      max-width: 600px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+    }
+
+    .contact h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #e282cf;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e282cf;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #111;
+      color: #aaa;
+      margin-top: 4rem;
+    }
+
+    footer a {
+      color: #e282cf;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Me</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="contact">
+    <h2>Let’s Connect</h2>
+    <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Shania L.Lunsford — <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+  </footer>
+
+</body>
+</html>
