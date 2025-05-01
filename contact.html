@@ -8,20 +8,20 @@
   <title>Contact | Shania Lunsford </title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    
-  </style>
+  
+  <!-- Load GSAP from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 </head>
 <body>
 
   <header>
-    <h1>Contact Me</h1>
+    <h1 class="color">Contact Me</h1>
   </header>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
+    <a class="color-hover" href="index.html">Home</a>
+    <a class="color-hover" href="about.html">About</a>
+    <a class="color-hover" href="projects.html">Projects</a>
     <a class="disabled">Contact</a>
   </nav>
 
@@ -31,7 +31,7 @@
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+      <button class="color" type="submit">Send Message</button>
     </form>
   </section>
 
@@ -39,5 +39,7 @@
     <p>Let's work together! Reach out via <a href="mailto:youremail@example.com">email</a> or follow me on <a href=https://www.linkedin.com/in/shania-lunsford-9416132a5/>LinkedIn</a>.</p>
     <p>&copy; 2025 Shania L. Lunsford</p>
   </footer>
+
+  <script type="text/javascript" src="gsap-animations.js"></script>
 </body>
 </html>
