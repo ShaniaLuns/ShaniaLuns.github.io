@@ -27,13 +27,22 @@
 
   <section class="contact">
     <h2>Let’s Connect</h2>
-    <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+    <form id="contactForm" action="mailto:youremail@example.com" method="POST" enctype="text/plain">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
       <button class="color" type="submit">Send Message</button>
     </form>
   </section>
+  <label>
+    <input type="radio" name="text_confirmation" value="yes" />
+    I would like to receive text confirmation
+  </label>
+  <br>
+  <label>
+    <input type="checkbox" name="notify_updates" value="yes" />
+    Notify me of new postings on this website
+  </label>
 
   <footer id="contact">
     <p>Let's work together! Reach out via <a href="mailto:youremail@example.com">email</a> or follow me on <a href=https://www.linkedin.com/in/shania-lunsford-9416132a5/>LinkedIn</a>.</p>
@@ -41,5 +50,13 @@
   </footer>
 
   <script type="text/javascript" src="gsap-animations.js"></script>
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      const confirmSend = confirm("Are you sure you want to submit this message?");
+      if (!confirmSend) {
+        event.preventDefault(); // Stop the form from submitting
+      }
+    });
+  </script>
 </body>
 </html>
